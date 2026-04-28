@@ -16,7 +16,7 @@ pipeline {
         }
         stage('SonarQube Analysis') {
             steps {
-                withSonarQubeEnv('SonarQube') { // Nombre definido en el paso 4.4
+                withSonarQubeEnv('Sonar') { // Nombre definido en el paso 4.4
                     sh 'mvn sonar:sonar'
                 }
             }
